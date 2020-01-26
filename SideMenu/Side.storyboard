@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4n-EO-wWT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Side View Controller-->
+        <scene sceneID="0LY-XJ-gRR">
+            <objects>
+                <viewController id="M4n-EO-wWT" customClass="SideViewController" customModule="SideMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S9K-Ji-0iX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NeA-le-Qiq">
+                                <rect key="frame" x="5" y="107" width="404" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="hCY-7g-98A"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Item 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ron-UB-Lwn">
+                                <rect key="frame" x="5" y="179" width="404" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="Oh7-qB-Z7R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Item 2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r0r-Kf-Q8l">
+                                <rect key="frame" x="5" y="251" width="404" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="67" id="PyX-it-cC5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Item 3"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ron-UB-Lwn" firstAttribute="top" secondItem="NeA-le-Qiq" secondAttribute="bottom" constant="5" id="2zc-dQ-cER"/>
+                            <constraint firstItem="Nxb-hk-x7L" firstAttribute="trailing" secondItem="NeA-le-Qiq" secondAttribute="trailing" constant="5" id="566-vq-aw2"/>
+                            <constraint firstItem="r0r-Kf-Q8l" firstAttribute="top" secondItem="ron-UB-Lwn" secondAttribute="bottom" constant="5" id="5Dh-6Y-gj6"/>
+                            <constraint firstItem="r0r-Kf-Q8l" firstAttribute="centerX" secondItem="S9K-Ji-0iX" secondAttribute="centerX" id="5Kb-Ny-6ZV"/>
+                            <constraint firstItem="NeA-le-Qiq" firstAttribute="top" secondItem="Nxb-hk-x7L" secondAttribute="top" constant="63" id="88x-PH-O9g"/>
+                            <constraint firstItem="Nxb-hk-x7L" firstAttribute="trailing" secondItem="ron-UB-Lwn" secondAttribute="trailing" constant="5" id="Dhx-zv-So5"/>
+                            <constraint firstItem="r0r-Kf-Q8l" firstAttribute="leading" secondItem="Nxb-hk-x7L" secondAttribute="leading" constant="5" id="MPZ-9c-bL7"/>
+                            <constraint firstItem="Nxb-hk-x7L" firstAttribute="trailing" secondItem="r0r-Kf-Q8l" secondAttribute="trailing" constant="5" id="MZy-M5-BoH"/>
+                            <constraint firstItem="NeA-le-Qiq" firstAttribute="leading" secondItem="Nxb-hk-x7L" secondAttribute="leading" constant="5" id="Mgy-7V-8jZ"/>
+                            <constraint firstItem="ron-UB-Lwn" firstAttribute="centerX" secondItem="S9K-Ji-0iX" secondAttribute="centerX" id="ifZ-6z-Vmc"/>
+                            <constraint firstItem="NeA-le-Qiq" firstAttribute="centerX" secondItem="S9K-Ji-0iX" secondAttribute="centerX" id="kyJ-59-aIj"/>
+                            <constraint firstItem="ron-UB-Lwn" firstAttribute="leading" secondItem="Nxb-hk-x7L" secondAttribute="leading" constant="5" id="tuj-0m-9gz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nxb-hk-x7L"/>
+                    </view>
+                    <connections>
+                        <outlet property="itemOne" destination="NeA-le-Qiq" id="iQg-Ec-DQ6"/>
+                        <outlet property="itemThree" destination="r0r-Kf-Q8l" id="fbn-uf-Po4"/>
+                        <outlet property="itemTwo" destination="ron-UB-Lwn" id="h64-4Y-LRL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fVi-ab-bJH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-210.1449275362319" y="163.39285714285714"/>
+        </scene>
+    </scenes>
+</document>
